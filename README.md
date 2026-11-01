@@ -4,18 +4,6 @@ Lecteur de documents **100 % hors-ligne** pour Android : PDF, Word (.docx/.doc),
 PowerPoint (.pptx), texte, Markdown et JSON. Pas de publicité, pas de compte, pas de suivi — et l'application
 ne déclare **aucune permission** (pas même INTERNET : voir `app/src/main/AndroidManifest.xml`).
 
-## Obtenir l'APK
-
-### Sans Android Studio (depuis un téléphone ou un PC)
-1. Créez un dépôt GitHub (privé si vous voulez) et envoyez-y tout ce dossier.
-2. Onglet **Actions** → « Construire l'APK » (il se lance tout seul à chaque envoi, ou via *Run workflow*).
-3. Une fois terminé (~5 min), téléchargez l'artefact **DocReaderPro-apk** → `DocReaderPro.apk` → installez-le
-   (autorisez « sources inconnues » pour votre navigateur / gestionnaire de fichiers).
-
-### Avec Android Studio
-Ouvrez ce dossier → *Run*. Le moteur web est déjà précompilé dans `app/src/main/assets/www`.
-Pour le reconstruire après modification : `cd web && npm install && npm run build:android`.
-
 ## Fonctions
 - **Bibliothèque** : reprise de lecture, favoris, filtres par type, tri, recherche, renommer/supprimer (annulable).
 - **PDF** : défilement continu, zoom (pincement, double-tap, boutons), recherche surlignée, sommaire, liens internes,
